@@ -1,21 +1,66 @@
-# Flappy Penguin (Python)
-Flappy Bird clone, programmed in python
+# Bird
 
-# Overview
+### Authors
+---
+* Emilee Hatch
+* Trent Black
+* Francis Gomez
+* Joseph Devincenzi
+* Ashley Dahlberg
 
-In Python using the Pyray library, myself and a team of 4 others created a flappy bird clone in Python.
+### Emails
+---
+* hemileecm@byui.edu
+* trentblack@byui.edu
+* rigoyots@gmail.com
+* dev15010@byui.edu 
+* dah20006@byui.edu
 
-Written in Python using the Pyray library.
+### Overview
+---
+Bird 
 
-This was a final project in a my "Programming with Classes" course. 
+### Gameplay
+---
+Bird is played according to the following rules.
 
-# Development Environment
+* Players can move up using the space bar key on the keyboard
+* If the player collides with a pipe they lose the game.
 
-Written using VS Code
+### Project Structure 
+---
+The project files and folders are organized as follows:
+```
+root (Bird)                    (project root folder)
++-- INSIDE THE GAME FOLDER --+
+  +-- Game Folder              (source code for game)
+    +-- Audio Folder           (source code for Audio)
+      +-- audio.py             (sound class)
+    +-- Bird Folder            (source code for player)
+      +-- bird.py              (player class)
+    +-- Picture Folder         (source code for pictures)
+      +-- pictures.py          (picture class)
+  +-- Pipe folder              (source code for pipes)
+    +-- pipe.py                (pipe class)
+  +-- Score folder             (source code for Score)
+    +-- score.py               (pipe class)
+  
++-- OUTSIDE THE GAME FOLDER --+ 
+  +-- .gitignore      
+  +-- downpipe.png             (image)
+  +-- flap.wav                 (sound)
+  +-- flappy1.png              (image)
+  +-- flappy3.png              (image)         
+  +-- main.py                  (entry point for program)
+  +-- over.wav                 (sound)
+  +-- pipe.png                 (image)
+  +-- README.md                (general info)
+  +-- test.py                  (test file)
+  +-- tests.py                 (bird test file)
+```
 
-Python with Pyray Library
-
-# Useful Websites
-
-Documentation for Pyray aka Raylib found here:
-* [Raylib](https://www.raylib.com/)
+### Required Technologies
+---
+* Python 3.8.0
+* pytest
+* Raylib Python CFFI 3.7
